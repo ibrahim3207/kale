@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hızlı Erişim Butonları</title>
+    <style>
+        :root {
+            --google: #4285F4;  /* Mavi */
+            --anket: #673AB7;   /* Mor */
+            --ariza: #FF5722;   /* Turuncu */
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .link-container {
+            width: 100%;
+            max-width: 450px;
+        }
+        
+        .link {
+            display: block;
+            text-align: center;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        .link-google { 
+            background: linear-gradient(135deg, var(--google) 0%, #34A853 100%);
+        }
+        .link-anket { 
+            background: linear-gradient(135deg, var(--anket) 0%, #9C27B0 100%);
+        }
+        .link-ariza { 
+            background: linear-gradient(135deg, var(--ariza) 0%, #FF9800 100%);
+        }
+        
+        @media (max-width: 500px) {
+            .link {
+                padding: 22px;
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="link-container">
+        <!-- 1. Buton - Google -->
+        <a href="https://www.google.com" class="link link-google" target="_blank">Google</a>
+        
+        <!-- 2. Buton - Anket -->
+        <a href="https://forms.gle/SMMyu7Qn9BS4WPYM8" class="link link-anket" target="_blank">Anket</a>
+        
+        <!-- 3. Buton - Arıza Bildir -->
+        <a href="https://forms.gle/PgWMK8CpUvQDX8m66" class="link link-ariza" target="_blank">Arıza Bildir</a>
+    </div>
+</body>
+</html>
